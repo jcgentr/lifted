@@ -70,7 +70,7 @@ button {
 	padding-bottom: 5px;
 }
 
-.lift-sets {
+.lift-set {
 	color: #e4fde1;
 	font-size: 1.5rem;
 	width: 100%;
@@ -78,8 +78,8 @@ button {
 	align-items: center;
 }
 
-.lift-sets > select,
-.lift-sets > input {
+.lift-set > select,
+.lift-set > input {
 	margin-left: 1rem;
 	margin-right: 1rem;
 }

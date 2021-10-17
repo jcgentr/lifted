@@ -1,6 +1,7 @@
-import { Lift } from "./components/Lift";
-import { Navbar } from "./components/Navbar";
-import { Title } from "./components/Title";
+import { Lift } from "./component/Lift";
+import { Navbar } from "./component/Navbar";
+import { Title } from "./component/Title";
+import { LiftedProvider } from "./context/LiftedContext";
 
 function App() {
 	return (
@@ -8,9 +9,11 @@ function App() {
 			<Title />
 			<Navbar />
 			<div className='lifts-container'>
-				<Lift title={"squat"} />
-				<Lift title={"bench"} />
-				<Lift title={"deadlift"} />
+				<LiftedProvider>
+					<Lift title={"squat"} />
+					<Lift title={"bench"} />
+					<Lift title={"deadlift"} />
+				</LiftedProvider>
 			</div>
 			<footer className='footer'>
 				<button style={{ width: "50%" }}>Log</button>
